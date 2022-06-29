@@ -1,0 +1,10 @@
+.projects {
+  display: flex;
+  justify-content: space-around;
+  &__title {
+    font-size: 4rem;
+    font-family: "italiana";
+    width: auto;
+    margin: auto;
+  }
+}
