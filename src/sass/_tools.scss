@@ -1,4 +1,6 @@
 .tools {
+  background-image: url("../../public/assets/old_paper_background.jpg");
+  height: 100vh;
   &__header {
     display: flex;
     justify-content: space-around;
@@ -7,6 +9,7 @@
       font-family: "italiana";
       width: auto;
       margin: auto;
+      font-weight: 500;
     }
   }
   &__map {

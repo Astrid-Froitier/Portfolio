@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__header">
-        <div className="contact__header__title">Contact</div>
+        <h1 className="contact__header__title">Contact</h1>
         <div>
           <NavBar />
         </div>
@@ -27,27 +27,42 @@ const Contact = () => {
             donner votre ressenti :
           </div>
           <form className="contact__text__form__complet">
-            <label
-              className="contact__text__form__complet__label"
-              htmlFor="name"
-            >
-              Votre nom :
-            </label>
-            <input type="text" />
-            <label
-              className="contact__text__form__complet__label"
-              htmlFor="socity"
-            >
-              Votre entreprise :
-            </label>
-            <input type="text" />
-            <label
-              className="contact__text__form__complet__label"
-              htmlFor="text"
-            >
-              Votre message :
-            </label>
-            <textarea type="message " />
+            <div className="contact__text__form__complet__label">
+              <label
+                className="contact__text__form__complet__label__name"
+                htmlFor="name"
+              >
+                Votre nom :
+              </label>
+              <input
+                className="contact__text__form__complet__label__input"
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                className="contact__text__form__complet__label__name"
+                htmlFor="socity"
+              >
+                Votre entreprise :
+              </label>
+              <input
+                className="contact__text__form__complet__label__input"
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                className="contact__text__form__complet__label__name"
+                htmlFor="text"
+              >
+                Votre message :
+              </label>
+              <textarea
+                className="contact__text__form__complet__label__input"
+                type="message "
+              />
+            </div>
           </form>
         </div>
       </div>

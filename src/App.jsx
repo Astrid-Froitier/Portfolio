@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Tools from "./components/Tools";
 import "./App.scss";
+import Main from "./components/Main";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Main />
     </div>
   );
 }

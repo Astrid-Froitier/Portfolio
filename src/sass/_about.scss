@@ -1,10 +1,17 @@
 .about {
-  display: flex;
-  justify-content: space-around;
-  &__title {
-    font-size: 4rem;
-    font-family: "italiana";
-    width: auto;
-    margin: auto;
+  height: 100vh;
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+
+    &__title {
+      font-size: 4rem;
+      font-family: "italiana";
+      width: auto;
+      margin: auto;
+      font-weight: 500;
+      color: $mainColor;
+    }
   }
 }
