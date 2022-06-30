@@ -36,9 +36,25 @@
         display: flex;
         justify-content: center;
 
-        &__tools {
+        &__about {
+          width: 11rem;
+          position: relative;
           text-decoration: none;
-          color: black;
+          color: transparent;
+          overflow: hidden;
+          background: linear-gradient(
+            to right,
+            rgb(167, 152, 67),
+            rgb(167, 152, 67) 50%,
+            black 50%
+          );
+          background-clip: text;
+          background-size: 200% 100%;
+          background-position: 100%;
+          transition: background-position 1000ms ease-in-out;
+          &:hover {
+            background-position: 0 100%;
+          }
         }
       }
       &__middle {
@@ -47,9 +63,24 @@
         &__left {
           margin: auto 2%;
 
-          &__about {
+          &__tools {
+            position: relative;
             text-decoration: none;
-            color: black;
+            color: transparent;
+            overflow: hidden;
+            background: linear-gradient(
+              to right,
+              rgb(167, 152, 67),
+              rgb(167, 152, 67) 50%,
+              black 50%
+            );
+            background-clip: text;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 700ms ease-in-out;
+            &:hover {
+              background-position: 0 100%;
+            }
           }
         }
 
@@ -57,8 +88,23 @@
           margin: auto 2%;
 
           &__projects {
+            position: relative;
             text-decoration: none;
-            color: black;
+            color: transparent;
+            overflow: hidden;
+            background: linear-gradient(
+              to right,
+              rgb(167, 152, 67),
+              rgb(167, 152, 67) 50%,
+              black 50%
+            );
+            background-clip: text;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 700ms ease-in-out;
+            &:hover {
+              background-position: 0 100%;
+            }
           }
         }
       }
@@ -67,9 +113,24 @@
         justify-content: center;
 
         &__contact {
+          position: relative;
           text-decoration: none;
-          color: black;
-          padding-right: 1.25rem;
+          color: transparent;
+          overflow: hidden;
+          background: linear-gradient(
+            to right,
+            rgb(167, 152, 67),
+            rgb(167, 152, 67) 50%,
+            black 50%
+          );
+          background-clip: text;
+          background-size: 200% 100%;
+          background-position: 100%;
+          transition: background-position 700ms ease-in-out;
+          padding-right: 1.2rem;
+          &:hover {
+            background-position: 0 100%;
+          }
         }
       }
     }

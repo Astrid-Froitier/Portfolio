@@ -1,0 +1,33 @@
+.tools {
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    &__title {
+      font-size: 4rem;
+      font-family: "italiana";
+      width: auto;
+      margin: auto;
+    }
+  }
+  &__map {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    &--front {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    &--back {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    &--tools {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}

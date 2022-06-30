@@ -1,0 +1,45 @@
+.contact {
+  background-image: url("../../public/assets/old_paper_background.jpg");
+  height: 100vh;
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    &__title {
+      font-size: 4rem;
+      font-family: "italiana";
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  &__text {
+    font-family: "parisienne";
+    font-size: 2rem;
+    // margin-top: 5%;
+    // margin-left: 8%;
+    margin: 5% 4% 0 4%;
+    display: flex;
+
+    &__info {
+      width: 40%;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3%;
+      width: 60%;
+
+      &__complet {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+
+        &__label {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

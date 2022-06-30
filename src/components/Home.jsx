@@ -29,15 +29,15 @@ const Home = () => {
         </div>
         <div className="home__right__compass">
           <div className="home__right__compass__top">
-            <Link className="home__right__compass__top__tools" to="/tools">
+            <Link className="home__right__compass__top__about" to="/about">
               Qui suis-je ?
             </Link>
           </div>
-          <div className="home__right__compass__middle">
+          <div className="home__right__compass__middle ">
             <div className="home__right__compass__middle__left">
               <Link
-                className="home__right__compass__middle__left__about"
-                to="/about"
+                className="home__right__compass__middle__left__tools"
+                to="/tools"
               >
                 Outils
               </Link>

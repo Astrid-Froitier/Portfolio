@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../../public/logo/rose.svg";
+// import Logo from "../../public/logo/rose.svg";
 
 const NavBar = () => {
   // state
@@ -10,25 +10,39 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex justify-end text-xl font-par">
-        <div className="p-3 my-auto">
-          <NavLink to="/projects">Projets</NavLink>
+      <div className="NavBar">
+        <div className="NavBar__tools">
+          <NavLink className="NavBar__tools__text" to="/tools">
+            Outils
+          </NavLink>
         </div>
-        <div>
-          <div className="flex justify-center p-3">
-            <NavLink to="/about">Qui suis-je ?</NavLink>
-          </div>
-          <div className="w-32 h-32">
-            <NavLink to="/">
-              <img src={Logo} alt="rose des vents" />
+
+        <div className="NavBar__middle">
+          <div className="NavBar__middle__about">
+            <NavLink className="NavBar__middle__about__text" to="/about">
+              Qui suis-je ?
             </NavLink>
           </div>
-          <div className="flex justify-center p-3">
-            <NavLink to="/tools">Outils</NavLink>
+          <div className="NavBar__middle__home">
+            <NavLink to="/">
+              <img
+                width={150}
+                height={150}
+                src="./assets/rose.svg"
+                alt="rose des vents"
+              />
+            </NavLink>
+          </div>
+          <div className="NavBar__middle__contact">
+            <NavLink className="NavBar__middle__contact__text" to="/contact">
+              Contact
+            </NavLink>
           </div>
         </div>
-        <div className="p-3 my-auto">
-          <NavLink to="/contact">Contact</NavLink>
+        <div className="NavBar__projects">
+          <NavLink className="NavBar__projects__text" to="/projects">
+            Projets
+          </NavLink>
         </div>
       </div>
     </div>

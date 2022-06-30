@@ -9,9 +9,9 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="flex justify-between">
-        <div className="w-auto m-auto text-6xl font-ita">Mes projets</div>
-        <div className="">
+      <div className="projects">
+        <div className="projects__title">Mes projets</div>
+        <div>
           <NavBar />
         </div>
       </div>

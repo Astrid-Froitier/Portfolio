@@ -1,0 +1,54 @@
+.NavBar {
+  display: flex;
+  font-family: "parisienne";
+  margin-top: 1rem;
+  margin-right: 2rem;
+
+  &__tools {
+    padding-right: 12px;
+    padding-bottom: 5px;
+    margin: auto 0;
+
+    &__text {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #000;
+    }
+  }
+
+  &__middle {
+    &__about {
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: center;
+
+      &__text {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #000;
+      }
+    }
+    &__contact {
+      padding-top: 12px;
+      display: flex;
+      justify-content: center;
+
+      &__text {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #000;
+      }
+    }
+  }
+  &__projects {
+    padding-left: 12px;
+    // padding-bottom: 5px;
+    margin: auto 0;
+
+    &__text {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #000;
+    }
+  }
+}
