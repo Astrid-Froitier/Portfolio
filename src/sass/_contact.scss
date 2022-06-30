@@ -1,5 +1,4 @@
 .contact {
-  background-image: url("../../public/assets/old_paper_background.jpg");
   height: 100vh;
   &__header {
     display: flex;
@@ -9,16 +8,17 @@
       font-family: "italiana";
       width: auto;
       margin: auto;
+      font-weight: 500;
+      color: $mainColor;
     }
   }
 
   &__text {
     font-family: "parisienne";
     font-size: 2rem;
-    // margin-top: 5%;
-    // margin-left: 8%;
     margin: 5% 4% 0 4%;
     display: flex;
+    color: $mainColor;
 
     &__info {
       width: 40%;
@@ -34,10 +34,22 @@
         display: flex;
         flex-direction: column;
         padding-top: 10%;
+        color: $mainColor;
 
         &__label {
           display: flex;
           justify-content: space-between;
+
+          &__input {
+            border: 0;
+            border-bottom: solid;
+            width: 100px;
+          }
+
+          textarea {
+            border: 0;
+            border-bottom: solid;
+          }
         }
       }
     }

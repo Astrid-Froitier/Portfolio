@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { tools, backs, fronts } from "../../data/tools";
+// import { PageFlip } from "page-flip";
 
 const Tools = () => {
   // state
@@ -13,7 +14,7 @@ const Tools = () => {
     <div>
       <div className="tools">
         <div className="tools__header">
-          <h1 className="tools__header__title">Mes outils</h1>
+          <h1 className="tools__header__title">My tools</h1>
           <div>
             <NavBar />
           </div>

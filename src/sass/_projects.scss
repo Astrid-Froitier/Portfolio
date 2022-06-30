@@ -1,10 +1,22 @@
 .projects {
-  display: flex;
-  justify-content: space-around;
+  height: 100vh;
+
   &__title {
     font-size: 4rem;
     font-family: "italiana";
     width: auto;
     margin: auto;
+    font-weight: 500;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    &__title {
+      font-size: 4rem;
+      font-family: "italiana";
+      width: auto;
+      margin: auto;
+      font-weight: 500;
+    }
   }
 }

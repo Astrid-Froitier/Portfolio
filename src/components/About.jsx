@@ -8,10 +8,10 @@ const About = () => {
   // debug
 
   return (
-    <div>
-      <div className="about">
-        <div className="about__title">Qui suis-je ?</div>
-        <div className="about__navBar">
+    <div className="about">
+      <div className="about__header">
+        <h1 className="about__header__title">Qui suis-je ?</h1>
+        <div className="about__header__navBar">
           <NavBar />
         </div>
       </div>
