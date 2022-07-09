@@ -1,16 +1,17 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div className="home">
-      <img
+      {/* <img
+        className="home__left"
         width={600}
-        height={820}
+        height={750}
         src="./assets/pot-pourris.jpg"
         alt="pot pourris"
-      />
+      /> */}
       <div className="home__right">
         <div className="home__right__text">
           <div className="home__right__text__title">Astrid Froitier</div>
@@ -29,7 +30,7 @@ const Home = () => {
         </div>
         <div className="home__right__compass">
           <div className="home__right__compass__top">
-            <Link className="home__right__compass__top__about" to="/about">
+            <Link className="home__right__compass__top__about" to="about">
               Qui suis-je ?
             </Link>
           </div>
@@ -37,7 +38,7 @@ const Home = () => {
             <div className="home__right__compass__middle__left">
               <Link
                 className="home__right__compass__middle__left__tools"
-                to="/tools"
+                to="tools"
               >
                 Outils
               </Link>
@@ -52,7 +53,7 @@ const Home = () => {
             <div className="home__right__compass__middle__right">
               <Link
                 className="home__right__compass__middle__right__projects"
-                to="/projects"
+                to="projects"
               >
                 Projets
               </Link>
@@ -61,7 +62,7 @@ const Home = () => {
           <div className="home__right__compass__bottom">
             <Link
               className="home__right__compass__bottom__contact"
-              to="/contact"
+              to="contact"
             >
               Contact
             </Link>

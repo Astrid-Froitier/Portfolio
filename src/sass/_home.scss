@@ -1,5 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+
+  &__onePage {
+    margin-right: -300px;
+  }
+}
+
 .home {
-  width: 100%;
+  // &__left {
+  //   @media screen and (max-width: 800px) {
+  //     display: none;
+  //   }
+  // }
+  height: 100vh;
   background-color: rgb(250 250 249);
   display: flex;
   justify-content: space-between;
@@ -41,6 +55,7 @@
         &__about {
           width: 11rem;
           position: relative;
+          cursor: pointer;
           text-decoration: none;
           color: transparent;
           overflow: hidden;
@@ -67,6 +82,8 @@
 
           &__tools {
             position: relative;
+            cursor: pointer;
+
             text-decoration: none;
             color: transparent;
             overflow: hidden;
@@ -91,6 +108,8 @@
 
           &__projects {
             position: relative;
+            cursor: pointer;
+
             text-decoration: none;
             color: transparent;
             overflow: hidden;
@@ -116,6 +135,8 @@
 
         &__contact {
           position: relative;
+          cursor: pointer;
+
           text-decoration: none;
           color: transparent;
           overflow: hidden;
@@ -134,6 +155,9 @@
             background-position: 0 100%;
           }
         }
+      }
+      @media screen and (max-width: 800px) {
+        display: none;
       }
     }
   }

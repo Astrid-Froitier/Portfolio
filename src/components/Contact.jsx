@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import NavBar from "./NavBar";
+import React from "react";
 
 const Contact = () => {
   // state
@@ -12,44 +11,38 @@ const Contact = () => {
     <div className="contact">
       <div className="contact__header">
         <h1 className="contact__header__title">Contact</h1>
-        <div>
-          <NavBar />
-        </div>
       </div>
       <div className="contact__text">
-        <div className="contact__text__info">
-          Vous souhaitez me joindre par<p> - téléphone ? 06 75 91 02 55</p>
-          <p>- mail ? asfroitier@gmail.com</p>
-        </div>
         <div className="contact__text__form">
-          <div>
-            Vous pouvez également m&apos;envoyer un message directement pour me
-            donner votre ressenti :
+          <div className="contact__text__form__header">
+            Envie de me rencontrer, d&apos;en savoir un peu plus sur moi ou
+            juste de me laisser un commentaire ?
+            <p>Ça se passe juste en dessous !</p>
           </div>
           <form className="contact__text__form__complet">
-            <div className="contact__text__form__complet__label">
+            <div className="contact__text__form__complet">
               <label
                 className="contact__text__form__complet__label__name"
                 htmlFor="name"
               >
                 Votre nom :
+                <input
+                  className="contact_text__form__complet__label__input"
+                  type="text"
+                />
               </label>
-              <input
-                className="contact__text__form__complet__label__input"
-                type="text"
-              />
             </div>
             <div>
               <label
                 className="contact__text__form__complet__label__name"
-                htmlFor="socity"
+                htmlFor="enterprise"
               >
                 Votre entreprise :
+                <input
+                  className="contact__text__form__complet__label__input"
+                  type="text"
+                />
               </label>
-              <input
-                className="contact__text__form__complet__label__input"
-                type="text"
-              />
             </div>
             <div>
               <label
@@ -57,11 +50,11 @@ const Contact = () => {
                 htmlFor="text"
               >
                 Votre message :
+                <textarea
+                  className="contact__text__form__complet__label__input"
+                  type="message "
+                />
               </label>
-              <textarea
-                className="contact__text__form__complet__label__input"
-                type="message "
-              />
             </div>
           </form>
         </div>
