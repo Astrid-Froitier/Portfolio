@@ -1,4 +1,4 @@
-import NavBar from "./NavBar";
+import React from "react";
 
 const Projects = () => {
   // state
@@ -11,9 +11,6 @@ const Projects = () => {
     <div className="projects">
       <div className="projects__header">
         <h1 className="projects__header__title">Mes projets</h1>
-        <div>
-          <NavBar />
-        </div>
       </div>
     </div>
   );

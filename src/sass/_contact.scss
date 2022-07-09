@@ -1,8 +1,13 @@
 .contact {
   height: 100vh;
+  width: 100vw;
+  background-color: rgb(250 250 249);
+
   &__header {
     display: flex;
     justify-content: space-around;
+    padding-top: 5vh;
+
     &__title {
       font-size: 4rem;
       font-family: "italiana";
@@ -17,12 +22,7 @@
     font-family: "parisienne";
     font-size: 2rem;
     margin: 5% 4% 0 4%;
-    display: flex;
     color: $mainColor;
-
-    &__info {
-      width: 40%;
-    }
 
     &__form {
       display: flex;
@@ -30,11 +30,15 @@
       padding-left: 3%;
       width: 60%;
 
+      &__header {
+        padding-bottom: 10%;
+      }
+
       &__complet {
-        display: flex;
-        flex-direction: column;
-        padding-top: 10%;
-        color: $mainColor;
+        // display: flex;
+        // flex-direction: column;
+        // padding-top: 10%;
+        // color: $mainColor;
 
         &__label {
           display: flex;
