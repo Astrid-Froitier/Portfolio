@@ -4,12 +4,12 @@ import Tools from "./Tools";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Home from "./Home";
-import NavBar from "./NavBar";
+import ShortNavBar from "./ShortNavBar";
 
 const OnePage = () => {
   return (
     <div className="main">
-      <NavBar />
+      <ShortNavBar />
       <div className="main__onePage">
         <Home />
         <About />

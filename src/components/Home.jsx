@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-scroll";
+import NavBar from "./NavBar";
 
 const Home = () => {
   return (
@@ -28,45 +28,8 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="home__right__compass">
-          <div className="home__right__compass__top">
-            <Link className="home__right__compass__top__about" to="about">
-              Qui suis-je ?
-            </Link>
-          </div>
-          <div className="home__right__compass__middle ">
-            <div className="home__right__compass__middle__left">
-              <Link
-                className="home__right__compass__middle__left__tools"
-                to="tools"
-              >
-                Outils
-              </Link>
-            </div>
-            <img
-              className="home__right__compass__middle__image"
-              width={300}
-              height={300}
-              src="./assets/rose.png"
-              alt="rose des vents"
-            />
-            <div className="home__right__compass__middle__right">
-              <Link
-                className="home__right__compass__middle__right__projects"
-                to="projects"
-              >
-                Projets
-              </Link>
-            </div>
-          </div>
-          <div className="home__right__compass__bottom">
-            <Link
-              className="home__right__compass__bottom__contact"
-              to="contact"
-            >
-              Contact
-            </Link>
-          </div>
+        <div className="home__navbar">
+          <NavBar />
         </div>
       </div>
     </div>

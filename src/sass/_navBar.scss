@@ -1,90 +1,118 @@
-.NavBar {
-  height: 250px;
-  display: flex;
-  justify-content: right;
+.navBar {
   font-family: "parisienne";
-  margin-right: 20px;
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(3px);
-  margin-top: 100vh;
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
 
-  &__tools {
-    padding-right: 12px;
-    padding-bottom: 5px;
-    margin: auto 0;
+  &__top {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 
-    &__li {
-      list-style-type: none;
-
-      &__text {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: #000;
-        color: $mainColor;
-        cursor: pointer;
-      }
-    }
-  }
-
-  &__middle {
-    margin-top: 25px;
     &__about {
-      padding-bottom: 12px;
-      display: flex;
-      justify-content: center;
+      width: 11rem;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      color: transparent;
+      overflow: hidden;
+      background: linear-gradient(
+        to right,
+        rgb(167, 152, 67),
+        rgb(167, 152, 67) 50%,
+        black 50%
+      );
+      background-clip: text;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 1000ms ease-in-out;
+      &:hover {
+        background-position: 0 100%;
+      }
+    }
+  }
+  &__middle {
+    display: flex;
+    justify-content: center;
+    &__left {
+      margin: auto 2%;
 
-      &__li {
-        list-style-type: none;
+      &__tools {
+        position: relative;
+        cursor: pointer;
 
-        &__text {
-          text-decoration: none;
-          font-size: 1.5rem;
-          color: #000;
-          color: $mainColor;
-          cursor: pointer;
+        text-decoration: none;
+        color: transparent;
+        overflow: hidden;
+        background: linear-gradient(
+          to right,
+          rgb(167, 152, 67),
+          rgb(167, 152, 67) 50%,
+          black 50%
+        );
+        background-clip: text;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 700ms ease-in-out;
+        &:hover {
+          background-position: 0 100%;
         }
       }
     }
 
-    &__home {
-      &__li {
-        list-style-type: none;
-        cursor: pointer;
-        border-radius: 50%;
-      }
-    }
-    &__contact {
-      padding-top: 12px;
-      display: flex;
-      justify-content: center;
+    &__right {
+      margin: auto 2%;
 
-      &__li {
-        list-style-type: none;
-        &__text {
-          text-decoration: none;
-          font-size: 1.5rem;
-          color: #000;
-          color: $mainColor;
-          cursor: pointer;
+      &__projects {
+        position: relative;
+        cursor: pointer;
+
+        text-decoration: none;
+        color: transparent;
+        overflow: hidden;
+        background: linear-gradient(
+          to right,
+          rgb(167, 152, 67),
+          rgb(167, 152, 67) 50%,
+          black 50%
+        );
+        background-clip: text;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 700ms ease-in-out;
+        &:hover {
+          background-position: 0 100%;
         }
       }
     }
   }
-  &__projects {
-    padding-left: 12px;
-    margin: auto 0;
+  &__bottom {
+    display: flex;
+    justify-content: center;
 
-    &__li {
-      list-style-type: none;
+    &__contact {
+      position: relative;
+      cursor: pointer;
 
-      &__text {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: #000;
-        color: $mainColor;
-        cursor: pointer;
+      text-decoration: none;
+      color: transparent;
+      overflow: hidden;
+      background: linear-gradient(
+        to right,
+        rgb(167, 152, 67),
+        rgb(167, 152, 67) 50%,
+        black 50%
+      );
+      background-clip: text;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 700ms ease-in-out;
+      padding-right: 1.2rem;
+      &:hover {
+        background-position: 0 100%;
       }
     }
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 }
