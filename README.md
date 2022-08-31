@@ -1,6 +1,7 @@
 ## Concept
 
-Voici un template déjà configuré pour vos projets front-end.
+Voici mon portfolio ! 
+Vous pouvez le regarder à loisir mais soyez indulgent ! Je suis encore en train de travailler dessus :)
 
 ## Setup & Use
 
