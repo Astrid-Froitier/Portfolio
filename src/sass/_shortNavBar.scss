@@ -1,9 +1,8 @@
 .ShortNavBar {
-  height: 250px;
+  height: 280px;
   display: flex;
   justify-content: right;
   font-family: "parisienne";
-  margin-right: 20px;
   position: sticky;
   top: 0;
   backdrop-filter: blur(3px);
@@ -11,7 +10,6 @@
 
   &__tools {
     padding-right: 12px;
-    padding-bottom: 5px;
     margin: auto 0;
 
     &__li {
@@ -86,5 +84,13 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+/////////// RESPONSIVE ////////
+
+@media all and (max-width: 800px) {
+  .ShortNavBar {
+    display: none;
   }
 }

@@ -1,8 +1,9 @@
+// import { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
   // state
-
+  // const [isOpen, setIsOpen] = useState(false);
   // functions
 
   // debug
@@ -38,6 +39,7 @@ const NavBar = () => {
           Contact
         </Link>
       </div>
+      {/* <div className="navBar__compass"></div> */}
     </div>
   );
 };

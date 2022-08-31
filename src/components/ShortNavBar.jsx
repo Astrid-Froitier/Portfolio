@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-const NavBar = () => {
+const ShortNavBar = () => {
   // state
 
   // fonction
@@ -97,4 +97,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default ShortNavBar;

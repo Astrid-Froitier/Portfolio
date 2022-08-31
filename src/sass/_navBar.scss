@@ -1,7 +1,10 @@
 .navBar {
   font-family: "parisienne";
   font-size: 2.2rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 
   &__top {
     text-decoration: none;
@@ -113,6 +116,14 @@
     }
   }
   @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+/////// RESPONSIVE ///////////
+
+@media all and (max-width: 800px) {
+  .navBar {
     display: none;
   }
 }
