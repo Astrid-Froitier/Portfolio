@@ -1,8 +1,9 @@
 .tools {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(250 250 249);
+  // width: 100vw;
+  background-color: $background;
   color: $mainColor;
+  padding-right: 260px;
+
   &__header {
     display: flex;
     justify-content: space-around;
@@ -31,9 +32,21 @@
       gap: 2rem;
     }
     &--tools {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 2rem;
+    }
+    &--softSkills {
       display: flex;
       justify-content: center;
       gap: 2rem;
     }
   }
 }
+
+// @media all and (max-width: 800px) {
+//   .tools {
+//   }
+// }

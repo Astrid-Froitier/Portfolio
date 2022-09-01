@@ -1,5 +1,5 @@
 import React from "react";
-import { tools, backs, fronts } from "../../data/tools";
+import { tools } from "../../data/tools";
 
 const Tools = () => {
   // state
@@ -15,7 +15,7 @@ const Tools = () => {
           <h1 className="tools__header__title">Mes outils</h1>
         </div>
         <div className="tools__map">
-          <div className="tools__map--front">
+          {/* <div className="tools__map--front">
             {fronts.map((front, index) => (
               <img
                 src={front.img}
@@ -36,7 +36,7 @@ const Tools = () => {
                 height={50}
               />
             ))}
-          </div>
+          </div> */}
           <div className="tools__map--tools">
             {tools.map((tool, index) => (
               <img
@@ -48,6 +48,17 @@ const Tools = () => {
               />
             ))}
           </div>
+          {/* <div className="tools__map--softSkills">
+            {softSkills.map((soft, index) => (
+              <img
+                src={soft.img}
+                key={index}
+                alt="logo"
+                width={50}
+                height={50}
+              />
+            ))}
+          </div> */}
         </div>
       </div>
     </div>

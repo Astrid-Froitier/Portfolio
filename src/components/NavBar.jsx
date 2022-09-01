@@ -1,98 +1,45 @@
+// import { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
   // state
-
-  // fonction
+  // const [isOpen, setIsOpen] = useState(false);
+  // functions
 
   // debug
 
   return (
-    <div>
-      <ul className="NavBar">
-        <div className="NavBar__tools">
-          <li className="NavBar__tools__li">
-            <Link
-              className="NavBar__tools__li__text"
-              to="tools"
-              activeClass="active"
-              spy
-              smooth
-              isDynamic
-              duration={1000}
-            >
-              Outils
-            </Link>
-          </li>
+    <div className="navBar">
+      <div className="navBar__top">
+        <Link className="navBar__top__about" to="about">
+          Qui suis-je ?
+        </Link>
+      </div>
+      <div className="navBar__middle ">
+        <div className="navBar__middle__left">
+          <Link className="navBar__middle__left__tools" to="tools">
+            Outils
+          </Link>
         </div>
-
-        <div className="NavBar__middle">
-          <div className="NavBar__middle__about">
-            <li className="NavBar__middle__about__li">
-              <Link
-                className="NavBar__middle__about__li__text"
-                to="about"
-                activeClass="active"
-                spy
-                smooth
-                isDynamic
-                duration={1000}
-              >
-                Qui suis-je ?
-              </Link>
-            </li>
-          </div>
-          <div className="NavBar__middle__home">
-            <li className="NavBar__middle__home__li">
-              <Link
-                to="home"
-                activeClass="active"
-                spy
-                smooth
-                isDynamic
-                duration={1000}
-              >
-                <img
-                  width={150}
-                  height={150}
-                  src="./assets/rose.svg"
-                  alt="rose des vents"
-                />
-              </Link>
-            </li>
-          </div>
-          <div className="NavBar__middle__contact">
-            <li className="NavBar__middle__contact__li">
-              <Link
-                className="NavBar__middle__contact__li__text"
-                to="contact"
-                activeClass="active"
-                spy
-                smooth
-                isDynamic
-                duration={1000}
-              >
-                Contact
-              </Link>
-            </li>
-          </div>
+        <img
+          className="navBar__middle__image"
+          width={300}
+          height={300}
+          src="./assets/rose.png"
+          alt="rose des vents"
+        />
+        <div className="navBar__middle__right">
+          <Link className="navBar__middle__right__projects" to="projects">
+            Projets
+          </Link>
         </div>
-        <div className="NavBar__projects">
-          <li className="NavBar__projects__li">
-            <Link
-              className="NavBar__projects__li__text"
-              to="projects"
-              activeClass="active"
-              spy
-              smooth
-              isDynamic
-              duration={1000}
-            >
-              Projets
-            </Link>
-          </li>
-        </div>
-      </ul>
+      </div>
+      <div className="navBar__bottom">
+        <Link className="navBar__bottom__contact" to="contact">
+          Contact
+        </Link>
+      </div>
+      {/* <div className="navBar__compass"></div> */}
     </div>
   );
 };
