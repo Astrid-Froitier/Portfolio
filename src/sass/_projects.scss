@@ -42,7 +42,7 @@
     &__header {
       padding-top: 2vh;
       &__title {
-        font-size: 2rem;
+        font-size: $font-size-title;
       }
     }
     &__details {
@@ -55,21 +55,15 @@
   }
 }
 
-// @media all and (max-width: 800px) {
-//   .projects {
-//     padding-right: 0;
-//     &__header {
-//       padding-top: 2vh;
-//       &__title {
-//         font-size: 2rem;
-//       }
-//     }
-//     &__details {
-//       &__map {
-//         display: flex;
-//         flex-direction: column;
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
+@media all and (max-width: 800px) {
+  .projects {
+    padding-right: 0;
+    &__details {
+      &__map {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+}

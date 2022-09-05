@@ -7,7 +7,6 @@ const Projects = () => {
   // fonction
 
   // debug
-  console.log(projects);
   return (
     <div className="projects">
       <div className="projects__header">
