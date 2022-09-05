@@ -1,4 +1,6 @@
 import React from "react";
+import networkLinks from "../../data/links";
+import cv from "../../public/files/Astrid FROITIER.pdf";
 
 const Contact = () => {
   // state
@@ -12,53 +14,70 @@ const Contact = () => {
       <h1 className="contact__title">Contact</h1>
       <div className="contact__text">
         <div className="contact__text__header">
-          Envie de me rencontrer, d&apos;en savoir un peu plus sur moi ou juste
-          de me laisser un commentaire ?<p>Ça se passe juste en dessous !</p>
+          <p>
+            Envie de me rencontrer, d&apos;en savoir un peu plus sur moi ou
+            juste de me laisser un commentaire ?
+          </p>
+          <p>Ça se passe juste en dessous !</p>
         </div>
-        <form className="contact__text__complet">
-          <div className="contact__text__">
-            <div className="contact__text__complet">
-              <label
-                className="contact__text__complet__label__name"
-                htmlFor="name"
-              >
-                Votre nom :{" "}
-                <input
-                  className="contact__text__complet__label__input"
-                  type="text"
-                />
-              </label>
-            </div>
-            <div>
-              <label
-                className="contact__text__complet__label__name"
-                htmlFor="enterprise"
-              >
-                Votre entreprise :{" "}
-                <input
-                  className="contact__text__complet__label__input"
-                  type="text"
-                />
-              </label>
-            </div>
-            <div>
-              <label
-                className="contact__text__complet__label__name"
-                htmlFor="text"
-              >
-                Votre message :{" "}
-                <textarea
-                  className="contact__text__complet__label__input"
-                  type="message "
-                />
-              </label>
+        <div className="contact__text__links">
+          <div className="contact__text__links__socialNetwork">
+            <p className="contact__text__links__socialNetwork__title">
+              Pour me suivre sur les réseaux sociaux :
+            </p>
+            <div className="contact__text__links__socialNetwork__map">
+              {networkLinks &&
+                networkLinks.map((link, index) => (
+                  <div
+                    // className="contact__text__links__socialNetwork__map"
+                    key={index}
+                  >
+                    <a
+                      className="contact__text__links__socialNetwork__map__a"
+                      href={link.url}
+                      target="blank"
+                    >
+                      <img
+                        className="contact__text__links__socialNetwork__map__a__img"
+                        src={link.img}
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                ))}
             </div>
           </div>
 
-          <div className="">
-            <button type="button">envoyer</button>
+          <div className="contact__text__links__mail">
+            <p className="contact__text__links__mail__title">
+              Pour m&apos;envoyer un mail ?
+            </p>
+            <a
+              className="contact__text__links__mail__a"
+              href="mailto: asfroitier@gmail.com"
+              target="blank"
+            >
+              <img
+                className="contact__text__links__mail__a__img"
+                src="../../public/assets/logo/mail-svgrepo-com.svg"
+                alt="logo mail"
+              />
+            </a>
           </div>
-        </form>
+
+          <div className="contact__text__links__cv">
+            <p className="contact__text__links__cv__title">
+              Pour télécharger mon CV :
+            </p>
+            <a className="contact__text__links__cv__a" href={cv} target="blank">
+              <img
+                className="contact__text__links__cv__a__img"
+                src="../../public/assets/logo/resume-svgrepo-com.svg"
+                alt="logo cv"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

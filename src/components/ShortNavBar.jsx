@@ -8,12 +8,12 @@ const ShortNavBar = () => {
   // debug
 
   return (
-    <div>
-      <ul className="ShortNavBar">
-        <div className="ShortNavBar__tools">
-          <li className="ShortNavBar__tools__li">
+    <div className="shortNavBar">
+      <ul className="ShortNavBar__ul">
+        <div className="ShortNavBar__ul__tools">
+          <li className="ShortNavBar__ul__tools__li">
             <Link
-              className="ShortNavBar__tools__li__text"
+              className="ShortNavBar__ul__tools__li__text"
               to="tools"
               activeClass="active"
               spy
@@ -26,11 +26,11 @@ const ShortNavBar = () => {
           </li>
         </div>
 
-        <div className="ShortNavBar__middle">
-          <div className="ShortNavBar__middle__about">
-            <li className="ShortNavBar__middle__about__li">
+        <div className="ShortNavBar__ul__middle">
+          <div className="ShortNavBar__ul__middle__about">
+            <li className="ShortNavBar__ul__middle__about__li">
               <Link
-                className="ShortNavBar__middle__about__li__text"
+                className="ShortNavBar__ul__middle__about__li__text"
                 to="about"
                 activeClass="active"
                 spy
@@ -42,8 +42,8 @@ const ShortNavBar = () => {
               </Link>
             </li>
           </div>
-          <div className="ShortNavBar__middle__home">
-            <li className="ShortNavBar__middle__home__li">
+          <div className="ShortNavBar__ul__middle__home">
+            <li className="ShortNavBar__ul__middle__home__li">
               <Link
                 to="home"
                 activeClass="active"
@@ -61,10 +61,10 @@ const ShortNavBar = () => {
               </Link>
             </li>
           </div>
-          <div className="ShortNavBar__middle__contact">
-            <li className="ShortNavBar__middle__contact__li">
+          <div className="ShortNavBar__ul__middle__contact">
+            <li className="ShortNavBar__ul__middle__contact__li">
               <Link
-                className="ShortNavBar__middle__contact__li__text"
+                className="ShortNavBar__ul__middle__contact__li__text"
                 to="contact"
                 activeClass="active"
                 spy
@@ -77,10 +77,10 @@ const ShortNavBar = () => {
             </li>
           </div>
         </div>
-        <div className="ShortNavBar__projects">
-          <li className="ShortNavBar__projects__li">
+        <div className="ShortNavBar__ul__projects">
+          <li className="ShortNavBar__ul__projects__li">
             <Link
-              className="ShortNavBar__projects__li__text"
+              className="ShortNavBar__ul__projects__li__text"
               to="projects"
               activeClass="active"
               spy
