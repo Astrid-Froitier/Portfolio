@@ -39,24 +39,26 @@
 }
 
 /// RESPONSIVE ////
-
-.main {
-  &__onePage {
-    padding-right: 0;
+@media all and (max-width: 800px) {
+  .main {
+    &__onePage {
+      padding-right: 0;
+    }
   }
 }
 
-.home {
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+  .home {
+    height: 200px;
     &__right {
       &__text {
         padding-left: 2vh;
         margin-top: 2vh;
         &__title {
-          font-size: 2rem;
+          font-size: 3rem;
         }
         &__subtitle {
-          font-size: 1.7rem;
+          font-size: 2rem;
         }
       }
     }
