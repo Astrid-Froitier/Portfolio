@@ -64,11 +64,21 @@
     padding-right: 0;
     &__title {
       padding-top: 2vh;
-      font-size: 2rem;
+      font-size: $font-size-title;
     }
     &__body {
       display: flex;
       flex-direction: column;
+      &__me {
+        &__text {
+          font-size: $font-size-text;
+        }
+      }
+      &__web {
+        &__text {
+          font-size: $font-size-text;
+        }
+      }
     }
   }
 }

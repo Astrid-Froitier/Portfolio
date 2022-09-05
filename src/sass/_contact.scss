@@ -65,7 +65,35 @@
   .contact {
     padding-right: 0;
     &__title {
-      font-size: 2rem;
+      font-size: $font-size-title;
+    }
+    &__text {
+      font-size: $font-size-text;
+      &__links {
+        display: unset;
+        &__socialNetwork {
+          padding-top: 30px;
+          &__map {
+            padding-top: 30px;
+          }
+        }
+        &__mail {
+          display: flex;
+          justify-content: space-between;
+          padding: 30px 0;
+          &__a {
+            padding-right: 100px;
+          }
+        }
+        &__cv {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 30px;
+          &__a {
+            padding-right: 100px;
+          }
+        }
+      }
     }
   }
 }
