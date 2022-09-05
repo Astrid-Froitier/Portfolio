@@ -16,42 +16,56 @@
 
   &__text {
     font-family: "parisienne";
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5% 4% 0 4%;
     color: $mainColor;
     display: flex;
     flex-direction: column;
-    padding-left: 3%;
-    width: 60%;
 
-    // &__form {
-    //   display: flex;
-    //   flex-direction: column;
-    //   padding-left: 3%;
-    //   width: 60%;
+    &__links {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
 
-    &__header {
-      padding-bottom: 10%;
-    }
-
-    &__complet {
-      &__label {
-        display: flex;
-        justify-content: space-between;
-
-        &__input {
-          border: 0;
-          border-bottom: solid;
-          width: 100px;
-          border-color: $mainColor;
+      &__socialNetwork {
+        &__map {
+          display: flex;
+          justify-content: space-evenly;
+          &__a {
+            &__img {
+              width: 50px;
+              height: 50px;
+            }
+          }
         }
-
-        textarea {
-          border: 0;
-          border-bottom: solid;
+      }
+      &__mail {
+        &__a {
+          &__img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      &__cv {
+        &__a {
+          &__img {
+            width: 50px;
+            height: 50px;
+          }
         }
       }
     }
-    // }
+  }
+}
+
+// RESPONSIVE ///
+
+@media all and (max-width: 800px) {
+  .contact {
+    padding-right: 0;
+    &__title {
+      font-size: 2rem;
+    }
   }
 }

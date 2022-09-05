@@ -6,7 +6,6 @@ const NavBarMobile = () => {
   // state
   const [isOpen, setIsOpen] = useState(false);
 
-  // const
   // function
 
   // debug
@@ -19,7 +18,7 @@ const NavBarMobile = () => {
             // className="navBarMobile__map"
             type="button"
             onClick={() => {
-              setIsOpen(true);
+              setIsOpen(false);
             }}
           >
             <img src="/assets/rose.svg" alt="logo" />
@@ -35,11 +34,12 @@ const NavBarMobile = () => {
           </button>
         )}
         <ul>
-          {navBarLinks.map((link) => (
-            <Link key={link.id} to={link.to}>
-              <li>{link.title}</li>
-            </Link>
-          ))}
+          {navBarLinks &&
+            navBarLinks.map((link) => (
+              <Link key={link.id} to={link.to}>
+                <p>{link.title}</p>
+              </Link>
+            ))}
         </ul>
       </div>
     </div>

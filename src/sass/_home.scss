@@ -8,12 +8,6 @@
 }
 
 .home {
-  // &__left {
-  //   @media screen and (max-width: 800px) {
-  //     display: none;
-  //   }
-  // }
-  height: 100vh;
   background-color: $background;
   display: flex;
   justify-content: space-between;
@@ -25,8 +19,6 @@
 
     &__text {
       display: inline;
-      // width: 51rem;
-      height: 100%;
       font-family: "italiana";
       padding-left: 5rem;
       margin-top: 5rem;
@@ -39,6 +31,31 @@
       &__subtitle {
         font-size: 2.2rem;
         color: $mainColor;
+      }
+    }
+  }
+}
+
+/// RESPONSIVE ////
+
+.main {
+  &__onePage {
+    padding-right: 0;
+  }
+}
+
+.home {
+  @media screen and (max-width: 800px) {
+    &__right {
+      &__text {
+        padding-left: 2vh;
+        margin-top: 2vh;
+        &__title {
+          font-size: 2rem;
+        }
+        &__subtitle {
+          font-size: 1.7rem;
+        }
       }
     }
   }
