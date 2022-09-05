@@ -11,10 +11,12 @@
   background-color: $background;
   display: flex;
   justify-content: space-between;
+  height: 100vh;
 
   &__right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
 
     &__text {
