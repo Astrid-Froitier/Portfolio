@@ -9,9 +9,7 @@ const Projects = () => {
   // debug
   return (
     <div className="projects">
-      <div className="projects__header">
-        <h1 className="projects__header__title">Mes projets</h1>
-      </div>
+      <h1 className="projects__title">Mes projets</h1>
       <div className="projects__details">
         <div className="projects__details__map">
           {projects.map((project, index) => (
@@ -33,9 +31,9 @@ const Projects = () => {
               <p className="projects__details__map__key__tools">
                 {project.tools}
               </p>
-              <p className="projects__details__map__key__desc">
+              {/* <p className="projects__details__map__key__desc">
                 {project.desc}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
