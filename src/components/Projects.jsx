@@ -33,6 +33,9 @@ const Projects = () => {
               <p className="projects__details__map__key__tools">
                 {project.tools}
               </p>
+              <p className="projects__details__map__key__desc">
+                {project.desc}
+              </p>
             </div>
           ))}
         </div>

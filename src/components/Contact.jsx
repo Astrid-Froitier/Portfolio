@@ -1,6 +1,6 @@
 import React from "react";
 import networkLinks from "../../data/links";
-import cv from "../../public/files/Astrid FROITIER.pdf";
+import cv from "/files/Astrid FROITIER.pdf";
 
 const Contact = () => {
   // state
@@ -59,7 +59,7 @@ const Contact = () => {
             >
               <img
                 className="contact__text__links__mail__a__img"
-                src="../../public/assets/logo/mail-svgrepo-com.svg"
+                src="/assets/logo/mail-svgrepo-com.svg"
                 alt="logo mail"
               />
             </a>
@@ -72,7 +72,7 @@ const Contact = () => {
             <a className="contact__text__links__cv__a" href={cv} target="blank">
               <img
                 className="contact__text__links__cv__a__img"
-                src="../../public/assets/logo/resume-svgrepo-com.svg"
+                src="/assets/logo/resume-svgrepo-com.svg"
                 alt="logo cv"
               />
             </a>
