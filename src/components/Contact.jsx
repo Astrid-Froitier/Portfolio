@@ -1,6 +1,6 @@
 import React from "react";
 import networkLinks from "../../data/links";
-import cv from "/files/Astrid FROITIER.pdf";
+import cv from "../../public/files/Astrid FROITIER.pdf";
 
 const Contact = () => {
   // state

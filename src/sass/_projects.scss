@@ -3,24 +3,25 @@
   color: $mainColor;
   padding-right: 260px;
 
-  &__header {
+  &__title {
+    font-size: $header;
+    font-family: "italiana";
+    width: auto;
+    font-weight: 500;
     display: flex;
-    justify-content: space-around;
     padding-top: 5vh;
-    &__title {
-      font-size: $header;
-      font-family: "italiana";
-      width: auto;
-      margin: auto;
-      font-weight: 500;
-    }
+    justify-content: center;
   }
   &__details {
     &__map {
+      overflow-x: scroll;
+      // scroll-snap-type: x mandatory;
+      // overscroll-behavior-x: contain;
+      // display: flex;
       margin-top: 30px;
-      display: flex;
-      justify-content: space-around;
-
+      // padding: 3rem;
+      gap: 30px;
+      justify-content: center;
       &__key {
         padding-top: 30px;
         text-align: center;
@@ -28,7 +29,6 @@
         &__title {
           padding-top: 30px;
           font-family: "italiana";
-          font-weight: 800;
           font-size: $text;
         }
         &__tools {
@@ -61,17 +61,27 @@
 
 @media all and (max-width: 1100px) {
   .projects {
-    &__header {
+    &__title {
       padding-top: 2vh;
-      &__title {
-        font-size: $font-size-title;
-      }
+      font-size: $font-size-title;
     }
     &__details {
       &__map {
-        display: flex;
-        flex-direction: column;
         text-align: center;
+
+        margin-top: 0;
+        gap: 30px;
+        padding: 0 30px;
+        // &__key {
+        //   &__a {
+        //     &__img {
+        //       width: 600px;
+        //       height: 300px;
+        //       border-radius: 10px;
+        //       object-fit: cover;
+        //     }
+        //   }
+        // }
       }
     }
   }
@@ -82,11 +92,6 @@
     padding-right: 0;
     &__details {
       &__map {
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
         &__key {
           margin-top: 50px;
           &__title {
@@ -98,14 +103,14 @@
           &__desc {
             font-size: $font-size-text;
           }
-          &__a {
-            &__img {
-              width: 600px;
-              height: 300px;
-              border-radius: 10px;
-              object-fit: cover;
-            }
-          }
+          // &__a {
+          //   &__img {
+          //     width: 600px;
+          //     height: 300px;
+          //     border-radius: 10px;
+          //     object-fit: cover;
+          //   }
+          // }
         }
       }
     }
