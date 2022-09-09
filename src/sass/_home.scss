@@ -41,6 +41,7 @@
 /// RESPONSIVE ////
 @media all and (max-width: 800px) {
   .main {
+    display: unset;
     &__onePage {
       padding-right: 0;
     }

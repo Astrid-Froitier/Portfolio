@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Tiny House",
     url: "https://astrid-froitier.github.io/Tiny-Houses/",
-    img: "../public/assets/tinyHouseProject3.jpeg",
+    img: "/assets/tinyHouseProject3.jpeg",
     tools: "HTML, SASS",
     // desc: ""
   },
