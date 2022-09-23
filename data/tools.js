@@ -135,6 +135,16 @@ const tools = [
     name: "VS code",
     img: "/assets/logo/vscode.svg",
   },
+  {
+    id: 17,
+    name: "PHP",
+    img: "/assets/logo/php-svgrepo-com.svg",
+  },
+  {
+    id: 18,
+    name: "Symfony",
+    img: "/assets/logo/symfony-svgrepo-com.svg",
+  },
 ];
 
 const softSkills = [

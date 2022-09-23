@@ -35,6 +35,11 @@
         color: $mainColor;
       }
     }
+    &__img {
+      &__logo {
+        display: none;
+      }
+    }
   }
 }
 
@@ -50,11 +55,20 @@
 
 @media screen and (max-width: 800px) {
   .home {
-    height: 200px;
+    height: 550px;
     &__right {
       &__text {
         padding-left: 2vh;
         margin-top: 2vh;
+      }
+      &__img {
+        display: flex;
+        justify-content: center;
+        &__logo {
+          display: flex;
+          width: 400px;
+          height: 400px;
+        }
       }
     }
   }
