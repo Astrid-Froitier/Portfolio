@@ -14,6 +14,9 @@
   &__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    ::-webkit-scrollbar {
+      display: none;
+    }
     &__me {
       &__subtitle {
         font-style: italic;
@@ -23,6 +26,7 @@
         padding-top: 5vh;
         padding-left: 5vh;
         padding-bottom: 5vh;
+        overflow: hidden;
       }
 
       &__text {
@@ -32,6 +36,7 @@
         color: $mainColor;
         text-align: justify;
         overflow: scroll;
+
         height: 350px;
       }
     }

@@ -41,8 +41,10 @@
       }
     }
     &__map {
+      display: flex;
+      flex-direction: column;
       &--tools {
-        gap: 1rem;
+        grid-template-columns: 30% 30% 30%;
       }
     }
   }
