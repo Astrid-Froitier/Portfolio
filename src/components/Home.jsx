@@ -27,7 +27,7 @@ const Home = () => {
         <div className="home__right__img">
           <img
             className="home__right__img__logo"
-            src="../../public/assets/rose.png"
+            src="./assets/rose.png"
             alt="compass"
           />
         </div>
