@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 5vh;
-    font-size: 4rem;
+    font-size: $title;
     font-family: "italiana";
     font-weight: 500;
     color: $mainColor;
@@ -14,7 +14,7 @@
 
   &__text {
     font-family: "parisienne";
-    font-size: $text;
+    font-size: $paragraph;
     margin: 5% 4% 0 4%;
     color: $mainColor;
     display: flex;
@@ -39,6 +39,7 @@
       }
       &__mail {
         &__a {
+          justify-content: center;
           &__img {
             width: 50px;
             height: 50px;
@@ -66,7 +67,7 @@
       font-size: $font-size-title;
     }
     &__text {
-      font-size: $font-size-text;
+      font-size: $font-size-paragraph;
       &__links {
         display: unset;
         &__socialNetwork {

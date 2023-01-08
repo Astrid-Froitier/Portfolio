@@ -2,11 +2,6 @@ import React from "react";
 import projects from "../../data/projects";
 
 const Projects = () => {
-  // state
-
-  // fonction
-
-  // debug
   return (
     <div className="projects">
       <h1 className="projects__title">Mes projets</h1>
@@ -31,9 +26,6 @@ const Projects = () => {
               <p className="projects__details__map__key__tools">
                 {project.tools}
               </p>
-              {/* <p className="projects__details__map__key__desc">
-                {project.desc}
-              </p> */}
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@
     padding-top: 5vh;
     display: flex;
     justify-content: center;
-    font-size: $header;
+    font-size: $title;
     font-family: "italiana";
     font-weight: 500;
     color: $mainColor;
@@ -14,48 +14,25 @@
   &__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    &__me {
-      &__subtitle {
-        font-style: italic;
-        font-family: "italiana";
-        font-weight: 300px;
-        color: $mainColor;
-        padding-top: 5vh;
-        padding-left: 5vh;
-        padding-bottom: 5vh;
-        overflow: hidden;
-      }
 
-      &__text {
-        font-family: "parisienne";
-        font-size: 25px;
-        padding: 0 60px;
-        color: $mainColor;
-        text-align: justify;
-        overflow: scroll;
-        tab-size: 2em;
-        height: 350px;
-      }
-    }
+    &__me,
     &__web {
       &__subtitle {
         font-style: italic;
         font-family: "italiana";
         font-weight: 300px;
         color: $mainColor;
-        padding-left: 5vh;
-        padding-top: 5vh;
+        padding: 5vh 0 5vh 5vh;
+        font-size: $title;
       }
 
       &__text {
         font-family: "parisienne";
-        font-size: 25px;
-        padding: 30px 60px;
+        font-size: $paragraph;
+        padding: 0 60px;
         color: $mainColor;
         text-align: justify;
+        tab-size: 2em;
       }
     }
   }
@@ -76,9 +53,10 @@
       &__me {
         &__subtitle {
           font-size: $font-size-subtitle;
+          height: 100%;
         }
         &__text {
-          font-size: $font-size-text;
+          font-size: $font-size-paragraph;
         }
       }
       &__web {
@@ -86,7 +64,7 @@
           font-size: $font-size-subtitle;
         }
         &__text {
-          font-size: $font-size-text;
+          font-size: $font-size-paragraph;
         }
       }
     }

@@ -145,6 +145,22 @@ const tools = [
     name: "Symfony",
     img: "/assets/logo/symfony-svgrepo-com.svg",
   },
+  {
+    id: 8,
+    name: "twig",
+    img: "/assets/logo/twig-svgrepo-com.svg",
+  },
+  {
+    id: 9,
+    name: "bootstrap",
+    img: "/assets/logo/Bootstrap_logo.svg.png",
+  },
+  { id: 10, name: "yarn", img: "/assets/logo/yarn-seeklogo.com.svg" },
+  {
+    id: 11,
+    name: "sequel ace",
+    img: "../public/assets/logo/sequel ace.png",
+  },
 ];
 
 const softSkills = [
