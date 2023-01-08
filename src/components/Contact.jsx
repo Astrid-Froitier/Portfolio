@@ -3,12 +3,6 @@ import networkLinks from "../../data/links";
 import cv from "../../public/files/Astrid FROITIER.pdf";
 
 const Contact = () => {
-  // state
-
-  // fonction
-
-  // debug
-
   return (
     <div className="contact">
       <h1 className="contact__title">Contact</h1>

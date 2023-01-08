@@ -50,21 +50,14 @@
     &__body {
       display: flex;
       flex-direction: column;
-      &__me {
-        &__subtitle {
-          font-size: $font-size-subtitle;
-          height: 100%;
-        }
-        &__text {
-          font-size: $font-size-paragraph;
-        }
-      }
+      &__me,
       &__web {
         &__subtitle {
           font-size: $font-size-subtitle;
         }
         &__text {
           font-size: $font-size-paragraph;
+          padding: 0 10vw;
         }
       }
     }

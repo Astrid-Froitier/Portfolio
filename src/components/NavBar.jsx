@@ -1,23 +1,32 @@
-// import { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-  // state
-  // const [isOpen, setIsOpen] = useState(false);
-  // functions
-
-  // debug
-
   return (
     <div className="navBar">
       <div className="navBar__top">
-        <Link className="navBar__top__about" to="about">
+        <Link
+          className="navBar__top__about"
+          to="about"
+          activeClass="active"
+          spy
+          smooth
+          isDynamic
+          duration={1000}
+        >
           Qui suis-je ?
         </Link>
       </div>
       <div className="navBar__middle ">
         <div className="navBar__middle__left">
-          <Link className="navBar__middle__left__tools" to="tools">
+          <Link
+            className="navBar__middle__left__tools"
+            to="tools"
+            activeClass="active"
+            spy
+            smooth
+            isDynamic
+            duration={1000}
+          >
             Outils
           </Link>
         </div>
@@ -29,17 +38,32 @@ const NavBar = () => {
           alt="rose des vents"
         />
         <div className="navBar__middle__right">
-          <Link className="navBar__middle__right__projects" to="projects">
+          <Link
+            className="navBar__middle__right__projects"
+            to="projects"
+            activeClass="active"
+            spy
+            smooth
+            isDynamic
+            duration={1000}
+          >
             Projets
           </Link>
         </div>
       </div>
       <div className="navBar__bottom">
-        <Link className="navBar__bottom__contact" to="contact">
+        <Link
+          className="navBar__bottom__contact"
+          to="contact"
+          activeClass="active"
+          spy
+          smooth
+          isDynamic
+          duration={1000}
+        >
           Contact
         </Link>
       </div>
-      {/* <div className="navBar__compass"></div> */}
     </div>
   );
 };
