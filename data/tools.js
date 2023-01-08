@@ -159,7 +159,7 @@ const tools = [
   {
     id: 11,
     name: "sequel ace",
-    img: "../public/assets/logo/sequel ace.png",
+    img: "/assets/logo/sequel ace.png",
   },
 ];
 

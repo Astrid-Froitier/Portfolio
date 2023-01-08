@@ -1,12 +1,6 @@
 import { Link } from "react-scroll";
 
 const ShortNavBar = () => {
-  // state
-
-  // fonction
-
-  // debug
-
   return (
     <div className="shortNavBar">
       <ul className="ShortNavBar">
