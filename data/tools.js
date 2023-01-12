@@ -56,7 +56,7 @@ const tools = [
   {
     id: 12,
     name: "git",
-    img: "../public/assets/logo/git.png",
+    img: "/assets/logo/git.png",
   },
   {
     id: 15,

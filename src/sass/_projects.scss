@@ -5,7 +5,6 @@
     font-size: $title;
     font-family: $titleFamily;
     width: auto;
-    font-weight: 500;
     display: flex;
     padding: 5vh 0;
     justify-content: center;
@@ -55,6 +54,11 @@
         text-align: end;
       }
     }
+    &__key:nth-child(4) {
+      a {
+        cursor: not-allowed;
+      }
+    }
   }
 }
 
@@ -69,7 +73,7 @@
     }
     &__map {
       margin-top: 0;
-      padding: 0;
+      padding: 0 0 5rem 0;
       gap: 3rem;
       &__key {
         &__a {

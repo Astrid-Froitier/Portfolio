@@ -7,7 +7,6 @@
     justify-content: center;
     font-size: $title;
     font-family: $titleFamily;
-    font-weight: 500;
   }
   &__body {
     display: grid;
@@ -50,6 +49,7 @@
     &__body {
       display: flex;
       flex-direction: column;
+      padding: 0 0 5rem 0;
       &__part {
         &__subtitle {
           font-size: $respsubTitle8;
