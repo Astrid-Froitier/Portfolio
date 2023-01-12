@@ -8,8 +8,6 @@
     &__title {
       font-size: $title;
       font-family: $titleFamily;
-      width: auto;
-      font-weight: 500;
     }
   }
   &__map {
@@ -26,10 +24,23 @@
     }
   }
 }
+//// RESPONSIVE /////
+
+@media all and (max-width: 1100px) {
+  .tools {
+    padding-right: 0;
+
+    &__map {
+      padding-right: 0;
+      &--tools {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}
 
 @media all and (max-width: 800px) {
   .tools {
-    padding-right: 0;
     &__header {
       padding-top: 3vh;
       &__title {
@@ -39,6 +50,7 @@
     &__map {
       display: flex;
       flex-direction: column;
+      margin: 0;
       &--tools {
         grid-template-columns: 50% 50%;
         gap: 1rem;

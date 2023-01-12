@@ -7,13 +7,13 @@ const Contact = () => {
     <section className="contact">
       <h1 className="contact__title">Contact</h1>
       <div className="contact__text">
-        <div className="contact__text__header">
+        {/* <div className="contact__text__header">
           <p>
             Envie de me rencontrer, d&apos;en savoir un peu plus sur moi ou
             juste de me laisser un commentaire ?
           </p>
           <p>Ça se passe juste en dessous !</p>
-        </div>
+        </div> */}
         <div className="contact__text__links">
           <div className="contact__text__links__socialNetwork">
             <p className="contact__text__links__socialNetwork__title">
@@ -54,7 +54,7 @@ const Contact = () => {
             >
               <img
                 className="contact__text__links__mail__a__img"
-                src="/assets/logo/mail-svgrepo-com.svg"
+                src="/assets/logo/mail.svg"
                 alt="logo mail"
               />
             </a>
@@ -67,7 +67,7 @@ const Contact = () => {
             <a className="contact__text__links__cv__a" href={cv} target="blank">
               <img
                 className="contact__text__links__cv__a__img"
-                src="/assets/logo/resume-svgrepo-com.svg"
+                src="/assets/logo/resume.svg"
                 alt="logo cv"
               />
             </a>

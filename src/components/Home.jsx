@@ -9,10 +9,10 @@ const Home = () => {
         <div className="home__text__title">Astrid Froitier</div>
 
         <div className="home__text__subtitle">
-          Developpeuse
+          Développeuse
           <Typewriter
             options={{
-              strings: [" junior", " aventurière", " créative", " Accrocheuse"],
+              strings: [" junior", " aventurière", " créative", " accrocheuse"],
               autoStart: true,
               loop: true,
             }}

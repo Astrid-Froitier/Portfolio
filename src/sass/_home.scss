@@ -38,11 +38,17 @@
 }
 
 /// RESPONSIVE ////
-@media all and (max-width: 800px) {
+
+@media screen and (max-width: 1100px) {
   .main {
     display: unset;
     &__onePage {
       margin-right: 0;
+    }
+  }
+  .home {
+    &__text {
+      margin-top: 3rem;
     }
   }
 }
@@ -52,14 +58,15 @@
     display: flex;
     justify-content: center;
     &__text {
-      padding-left: 2vh;
+      padding-left: 1vh;
       margin-top: 5vh;
       height: 120px;
       &__title {
-        font-size: $font-size-header;
+        font-size: $respHeader8;
       }
       &__subtitle {
-        font-size: $font-size-header;
+        font-size: $respTitle8;
+        gap: 0.5rem;
       }
     }
     &__img {

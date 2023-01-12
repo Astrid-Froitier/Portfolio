@@ -13,7 +13,7 @@ const NavBar = () => {
           isDynamic
           duration={1000}
         >
-          Qui suis-je ?
+          Je suis...
         </Link>
       </div>
       <div className="navBar__middle ">
