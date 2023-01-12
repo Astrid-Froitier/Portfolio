@@ -1,24 +1,21 @@
 .tools {
-  background-color: $background;
-  color: $mainColor;
   padding-right: 260px;
 
   &__header {
     display: flex;
     justify-content: space-around;
-    padding-top: 5vh;
+    padding: 5vh 0;
     &__title {
-      font-size: $header;
-      font-family: "italiana";
+      font-size: $title;
+      font-family: $titleFamily;
       width: auto;
       font-weight: 500;
     }
   }
   &__map {
-    margin-top: 3rem;
-    display: flex;
+    margin: 3rem 0;
     flex-direction: column;
-    gap: 2rem;
+    padding-right: 5rem;
 
     &--tools {
       display: grid;
@@ -26,7 +23,6 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
       justify-items: center;
       gap: 2rem;
-      padding-bottom: 30px;
     }
   }
 }

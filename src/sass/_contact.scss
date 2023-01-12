@@ -1,29 +1,35 @@
 .contact {
-  background-color: $background;
   padding-right: 260px;
+  padding-bottom: 10rem;
 
   &__title {
     display: flex;
     justify-content: space-around;
-    padding-top: 5vh;
+    padding: 5vh 0;
     font-size: $title;
-    font-family: "italiana";
+    font-family: $titleFamily;
     font-weight: 500;
     color: $mainColor;
   }
 
   &__text {
-    font-family: "parisienne";
+    gap: 3rem;
+    font-family: $paragraphFamily;
     font-size: $paragraph;
-    margin: 5% 4% 0 4%;
+    margin-left: 2rem;
     color: $mainColor;
     display: flex;
     flex-direction: column;
+    &__header {
+      p {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
     &__links {
       display: flex;
       justify-content: space-around;
-      padding-bottom: 20px;
 
       &__socialNetwork {
         &__map {

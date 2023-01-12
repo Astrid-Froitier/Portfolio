@@ -1,36 +1,32 @@
 .about {
-  background-color: $background;
   padding-right: 260px;
 
   &__title {
-    padding-top: 5vh;
+    padding: 5vh 0;
     display: flex;
     justify-content: center;
     font-size: $title;
-    font-family: "italiana";
+    font-family: $titleFamily;
     font-weight: 500;
-    color: $mainColor;
   }
   &__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    &__me,
-    &__web {
+    grid-template-rows: 1fr 1fr;
+    &__part {
       &__subtitle {
         font-style: italic;
-        font-family: "italiana";
-        font-weight: 300px;
+        font-family: $paragraphFamily;
+        font-weight: 300;
         color: $mainColor;
-        padding: 5vh 0 5vh 5vh;
-        font-size: $title;
+        padding: 5vh 0 5vh 2vh;
+        font-size: $subtitle;
       }
 
       &__text {
-        font-family: "parisienne";
+        font-family: $paragraphFamily;
         font-size: $paragraph;
         padding: 0 60px;
-        color: $mainColor;
         text-align: justify;
         tab-size: 2em;
       }
