@@ -55,6 +55,11 @@
         text-align: end;
       }
     }
+    &__key:nth-child(4) {
+      a {
+        cursor: not-allowed;
+      }
+    }
   }
 }
 
