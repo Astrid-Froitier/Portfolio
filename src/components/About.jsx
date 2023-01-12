@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="about__body__part">
           <h2 className="about__body__part__subtitle">
-            ... Sens du contact humain
+            ... J&apos;ai le sens du contact humain
           </h2>
           <p className="about__body__part__text">
             Dans ma vie professionnelle j&apos;ai approfondi mon sens naturel de
