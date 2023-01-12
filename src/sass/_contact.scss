@@ -1,34 +1,44 @@
 .contact {
-  background-color: $background;
   padding-right: 260px;
+  padding-bottom: 5rem;
 
   &__title {
     display: flex;
     justify-content: space-around;
-    padding-top: 5vh;
+    padding: 5vh 0;
     font-size: $title;
-    font-family: "italiana";
-    font-weight: 500;
-    color: $mainColor;
+    font-family: $titleFamily;
   }
 
   &__text {
-    font-family: "parisienne";
+    gap: 3rem;
+    font-family: $paragraphFamily;
     font-size: $paragraph;
-    margin: 5% 4% 0 4%;
-    color: $mainColor;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
+    &__header {
+      p {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
     &__links {
       display: flex;
       justify-content: space-around;
-      padding-bottom: 20px;
+      gap: 2rem;
+      padding-right: 2rem;
 
       &__socialNetwork {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
         &__map {
           display: flex;
           justify-content: space-evenly;
+          text-align: center;
           &__a {
             &__img {
               width: 50px;
@@ -37,16 +47,12 @@
           }
         }
       }
+      &__cv,
       &__mail {
-        &__a {
-          justify-content: center;
-          &__img {
-            width: 50px;
-            height: 50px;
-          }
-        }
-      }
-      &__cv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
         &__a {
           &__img {
             width: 50px;
@@ -60,9 +66,14 @@
 
 // RESPONSIVE ///
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1100px) {
   .contact {
     padding-right: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .contact {
     &__title {
       font-size: $font-size-title;
     }
@@ -71,26 +82,13 @@
       &__links {
         display: unset;
         &__socialNetwork {
-          padding-top: 30px;
-          &__map {
-            padding-top: 30px;
-          }
+          gap: 1rem;
         }
-        &__mail {
-          display: flex;
-          justify-content: space-between;
-          padding: 30px 0;
-          &__a {
-            padding-right: 100px;
-          }
-        }
+        &__mail,
         &__cv {
+          gap: 1rem;
           display: flex;
           justify-content: space-between;
-          padding-bottom: 30px;
-          &__a {
-            padding-right: 100px;
-          }
         }
       }
     }

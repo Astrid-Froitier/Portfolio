@@ -1,16 +1,27 @@
 $mainColor: #060b72;
 $background: #fff9ef;
 
+$titleFamily: "italiana";
+$paragraphFamily: "Tajawal";
+
 /// LAPTOP ////
 
-$header: 4rem;
-$title: 2rem;
+$homeTitle: 5rem;
+$homeSubtitle: 3rem;
+$title: 2.7rem;
 $subtitle: 2rem;
-$paragraph: 2rem;
+$paragraph: 1.5rem;
 
-//// RESPONSIVE /////
+//// RESPONSIVE 1100 px/////
 
 $font-size-header: 2.5rem;
 $font-size-title: 2rem;
 $font-size-paragraph: 1.5rem;
-$font-size-subtitle: 1.5rem;
+$font-size-subtitle: 1.8rem;
+
+//// RESPONSIVE 800 px ////
+
+$respHeader8: 3rem;
+$respTitle8: 2rem;
+$respsubTitle8: 1.8rem;
+$respParagraph8: 1.5rem;

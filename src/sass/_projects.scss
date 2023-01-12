@@ -1,43 +1,58 @@
 .projects {
-  background-color: $background;
-  color: $mainColor;
   padding-right: 260px;
 
   &__title {
-    font-size: $header;
-    font-family: "italiana";
+    font-size: $title;
+    font-family: $titleFamily;
     width: auto;
     font-weight: 500;
     display: flex;
-    padding-top: 5vh;
+    padding: 5vh 0;
     justify-content: center;
   }
-  &__details {
-    &__map {
-      gap: 30px;
-      &__key {
-        padding-top: 30px;
-        text-align: center;
 
-        &__title {
-          padding-top: 30px;
-          font-family: "italiana";
-          font-size: $paragraph;
-        }
-        &__tools {
-          padding-top: 30px;
-          font-style: italic;
-          font-size: $subtitle;
-        }
+  &__map {
+    gap: 3rem;
+    display: grid;
+    padding: 0 5rem 5rem 2rem;
+    &__key {
+      &__a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        cursor: pointer;
+        gap: 3rem;
 
-        &__a {
-          &__img {
-            width: 400px;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: cover;
+        &__img {
+          width: 400px;
+          height: 200px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+        &__text {
+          gap: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          &__title {
+            font-family: $titleFamily;
+            font-size: $subtitle;
+          }
+          &__tools,
+          &__desc {
+            font-size: $paragraph;
+            font-family: $paragraphFamily;
+          }
+          &__tools {
+            font-style: italic;
           }
         }
+      }
+    }
+    &__key:nth-of-type(2n + 2) {
+      a {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
       }
     }
   }
@@ -47,16 +62,31 @@
 
 @media all and (max-width: 1100px) {
   .projects {
+    padding-right: 0;
     &__title {
       padding-top: 2vh;
       font-size: $font-size-title;
     }
-    &__details {
-      &__map {
-        text-align: center;
+    &__map {
+      margin-top: 0;
+      padding: 0;
+      gap: 3rem;
+      &__key {
+        &__a {
+          gap: 1rem;
+          &__img {
+            width: 30%;
+            height: 30%;
+          }
 
-        margin-top: 0;
-        gap: 30px;
+          &__text {
+            gap: 1rem;
+            &__desc {
+              display: none;
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
@@ -64,28 +94,35 @@
 
 @media all and (max-width: 800px) {
   .projects {
-    padding-right: 0;
-    &__details {
-      display: flex;
-      justify-content: center;
-      &__map {
-        width: 65%;
-        &__key {
-          margin-top: 25px;
-          &__title {
-            font-size: $font-size-title;
-            padding-top: 15px;
+    &__map {
+      &__key {
+        //
+        &__a {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          &__img {
+            width: 50%;
+            height: 50%;
           }
-          &__tools {
-            font-size: $font-size-subtitle;
-            padding-top: 15px;
-          }
-          &__a {
-            &__img {
-              width: 250px;
-              height: 125px;
+          &__text {
+            gap: 0;
+            &__title {
+              font-size: $respsubTitle8;
+            }
+            &__tools {
+              font-size: $respParagraph8;
             }
           }
+        }
+      }
+      &__key:nth-of-type(2n + 2) {
+        a {
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          align-items: center;
         }
       }
     }

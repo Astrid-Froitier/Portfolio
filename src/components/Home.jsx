@@ -5,32 +5,29 @@ import NavBar from "./NavBar";
 const Home = () => {
   return (
     <div className="home">
-      <div className="home__right">
-        <div className="home__right__text">
-          <div className="home__right__text__title">Astrid Froitier</div>
-          <div className="home__right__text__subtitle">
-            <Typewriter
-              options={{
-                strings: [
-                  "Grande développeuse en devenir !",
-                  "Bébé developpeuse deviendra grande !",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-        </div>
-        <div className="home__navbar">
-          <NavBar />
-        </div>
-        <div className="home__right__img">
-          <img
-            className="home__right__img__logo"
-            src="./assets/rose.png"
-            alt="compass"
+      <div className="home__text">
+        <div className="home__text__title">Astrid Froitier</div>
+
+        <div className="home__text__subtitle">
+          Développeuse
+          <Typewriter
+            options={{
+              strings: [" junior", " aventurière", " créative", " accrocheuse"],
+              autoStart: true,
+              loop: true,
+            }}
           />
         </div>
+      </div>
+      <div className="home__navbar">
+        <NavBar />
+      </div>
+      <div className="home__img">
+        <img
+          className="home__img__logo"
+          src="./assets/rose.png"
+          alt="compass"
+        />
       </div>
     </div>
   );
