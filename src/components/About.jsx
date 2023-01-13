@@ -7,12 +7,12 @@ const About = () => {
           <h2 className="about__body__part__subtitle">... Accrocheuse !</h2>
           <p className="about__body__part__text">
             En CDI 25h, j&apos;ai valorisé les 10h disponibles pour préparer et
-            réussir par correspondance ma licence universitaire de XXXXX, à la
-            faculté du Mans. Plus récemment, j&apos;ai décidé de démissionner
-            d&apos;IKEA pour me reconvertir Développeuse WEB. Dans ces
-            différents défis, je m&apos;attache à me dépasser pour obtenir les
-            meilleurs résultats et acquérir une compétence toujours plus
-            affutée.
+            réussir par correspondance ma licence universitaire de Conception et
+            mise en oeuvre de projets culturels, à la faculté du Mans. Plus
+            récemment, j&apos;ai décidé de démissionner d&apos;IKEA pour me
+            reconvertir Développeuse WEB. Dans ces différents défis, je
+            m&apos;attache à me dépasser pour obtenir les meilleurs résultats et
+            acquérir une compétence toujours plus affutée.
           </p>
         </div>
         <div className="about__body__part">
